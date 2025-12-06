@@ -2,8 +2,8 @@
 
 namespace App\Providers\Filament;
 
-use App\Models\Tenant;
 use App\Filament\Pages\Tenancy\RegisterTenant;
+use App\Models\Tenant;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;

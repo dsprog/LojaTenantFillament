@@ -3,12 +3,12 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasTenants;
-use Illuminate\Database\Eloquent\Model;
-use \Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -66,7 +66,7 @@ class User extends Authenticatable implements FilamentUser, HasTenants
         return $this->tenants->contains($tenant);
     }
 
-    public function getTenants(\Filament\Panel $panel): array | Collection
+    public function getTenants(\Filament\Panel $panel): array|Collection
     {
         return $this->tenants;
     }

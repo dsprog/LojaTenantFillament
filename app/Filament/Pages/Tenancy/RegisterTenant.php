@@ -4,9 +4,8 @@ namespace App\Filament\Pages\Tenancy;
 
 use App\Models\Tenant;
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Schema;
 use Filament\Pages\Tenancy\RegisterTenant as BaseRegisterTenant;
-use Illuminate\Database\Eloquent\Model;
+use Filament\Schemas\Schema;
 use Illuminate\Support\Str;
 
 class RegisterTenant extends BaseRegisterTenant

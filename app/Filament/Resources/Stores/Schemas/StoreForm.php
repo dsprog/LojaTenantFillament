@@ -2,10 +2,10 @@
 
 namespace App\Filament\Resources\Stores\Schemas;
 
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
-use Filament\Forms\Components\{
-    TextInput,FileUpload,RichEditor
-};
 
 class StoreForm
 {
