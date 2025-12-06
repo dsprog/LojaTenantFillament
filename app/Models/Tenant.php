@@ -9,6 +9,8 @@ class Tenant extends Model
 {
     protected $fillable = [
         'name',
+        'code',
+        'slug',
     ];
 
     public function members(): BelongsToMany
