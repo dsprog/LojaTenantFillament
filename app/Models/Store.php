@@ -3,9 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use \Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Traits\BelongsToTenantsTrait;
 
 class Store extends Model
 {
+    use HasFactory, BelongsToTenantsTrait;
+
     protected $fillable = [
         'name',
         'logo',
